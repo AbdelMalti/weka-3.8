@@ -14,36 +14,20 @@
  */
 
 /*
- * Copyright (C) 2006 University of Waikato 
+ *    FPGrowth.java
+ *    Copyright (C) 2009-2012 University of Waikato, Hamilton, New Zealand
+ *
  */
 
 package weka.associations;
 
-import weka.test.WekaTestSuite;
-import junit.framework.Assert;
-import junit.framework.Test;
+public class HelloCoco {
+  public static final String name_ = "coco";
 
-/**
- * Test class for all associators. Run from the command line with: <p/>
- * java weka.associations.AllTests
- *
- * @author FracPete (frapcete at waikato dot ac dot nz)
- * @version $Revision$
- */
-public class AllTests 
-  extends WekaTestSuite {
+  public String getCoco() {
 
-  public static Test suite() {
-    return suite("weka.associations.Associator");
+    return name_;
+
   }
 
-  public static void testMonCoco() {
-    HelloCoco coco=new HelloCoco();
-    String infoCoco=coco.getCoco();
-    Assert.assertEquals(infoCoco,"coco");
-  }
-
-  public static void main(String []args) {
-    junit.textui.TestRunner.run(suite());
-  }
 }
